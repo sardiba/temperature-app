@@ -19,7 +19,7 @@ describe("convertCelsiusToFahrenheit", () => {
 // for convertFahrenheitToCelsius
 describe("convertFahrenheitToCelsius", () => {
   it("converts 100°F correctly", () => {
-    expect(convertFahrenheitToCelsius(100)).toEqual(37.77777777777778);
+    expect(convertFahrenheitToCelsius(100)).toEqual(37.77777777777778); // instead of toEqual() use toBeCloseTo(38, 5) 38 is for number 5 is for digits
   });
   it("converts 0°F correctly", () => {
     expect(convertFahrenheitToCelsius(0)).toEqual(-17.77777777777778);
