@@ -1,14 +1,14 @@
-import '../styles/globals.css';
-import Link from 'next/link';
+import "../styles/globals.css";
+import Link from "next/link";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div style={{ margin: 16 }}>
       <nav
         style={{
-          display: 'flex',
+          display: "flex",
           gap: 16,
-          alignItems: 'center',
+          alignItems: "center",
           marginBottom: 16,
         }}
       >
@@ -16,10 +16,10 @@ function MyApp({ Component, pageProps }) {
           <a>🏠</a>
         </Link>
         <Link href="/fahrenheit-to-celsius">
-          <a>Convert celsius to fahrenheit</a>
+          <a>Convert fahrenheit to celsius</a>
         </Link>
         <Link href="/celsius-to-fahrenheit">
-          <a>Convert fahrenheit to celsius</a>
+          <a>Convert celsius to fahrenheit</a>
         </Link>
       </nav>
       <Component {...pageProps} />

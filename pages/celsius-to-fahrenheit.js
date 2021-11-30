@@ -1,5 +1,5 @@
-import { Convert } from '../components/Convert';
+import { Convert } from "../components/Convert";
 
 export default function Home() {
-  return <Convert from="fahrenheit" />;
+  return <Convert from="celisius" />;
 }
